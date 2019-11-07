@@ -48,8 +48,8 @@
    float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+  width: 15%;
+  height: 580px;
 }
 
 /* Style the buttons inside the tab */
@@ -82,7 +82,7 @@
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 70%;
+  width: 85%;
   border-left: none;
   height: 300px;
 }
@@ -103,7 +103,7 @@
 #comenzi {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #comenzi td, #comenzi th {
@@ -140,7 +140,7 @@
 #hub {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  
 }
 
 #hub td, #hub th {
@@ -176,7 +176,7 @@
 #colet {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #colet td, #colet th {
@@ -212,7 +212,7 @@
 #angajati {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #angajati td, #angajati th {
@@ -249,7 +249,7 @@
 #factura {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #factura td, #factura th {
@@ -286,7 +286,7 @@
 #masini {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #masini td, #masini th {
@@ -323,7 +323,7 @@
 #ruta {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #ruta td, #ruta th {
@@ -359,7 +359,7 @@
 #clienti {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
 }
 
 #clienti td, #clienti th {
