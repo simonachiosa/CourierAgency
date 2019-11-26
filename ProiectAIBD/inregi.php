@@ -30,5 +30,5 @@
 ?>
 <script>
     var timer = setTimeout(function(){
-    window.location.href='index.html'},3000);
+    window.location.href='index.html'},1000);
 </script>
