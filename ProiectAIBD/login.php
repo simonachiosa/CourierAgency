@@ -13,7 +13,7 @@
         
         foreach($conn->query($sql) as $row){    
             if($row['Rol']=='client')
-                header('Location:inreg_comenzi.html');
+                header('Location:plasare comanda.html');
        }
     } catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
