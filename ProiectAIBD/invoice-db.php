@@ -14,7 +14,7 @@ $query3 = mysqli_query($con, "select *
 from `colet`, `comenzi-clienti`, `clienti`
 where `colet`.cod_comanda=`comenzi-clienti`.cod_comanda
   and `comenzi-clienti`.cod_clienti=`clienti`.cod_clienti
-  and `clienti`.cod_clienti = '".$_GET['invoiceID']."'");
+  and  `clienti`.cod_clienti = '".$_GET['invoiceID']."'");
 $invoice3 = mysqli_fetch_array($query3);
 
 
@@ -78,12 +78,13 @@ $pdf->Cell(34,5,'Amount',1,1);
 $pdf->SetFont('Arial','',12);
 
 $amount = 0;
+$query4 = mysqli_query($con, "select * from colet inner join factura using(cod_colet)");
 
-while($item = mysqli_fetch_array($query3) && $item2 = mysqli_fetch_array($query2)){
-  $pdf->Cell(130,5,$item['dimensiune'],1,0);
+while($item1 = mysqli_fetch_array($query4)){
+  $pdf->Cell(130,5,$item1['dimensiune'],1,0);
   $pdf->Cell(25,5,'0',1,0);
-  $pdf->Cell(34,5,number_format($item2['total_plata']),1,1,'R');
-  $amount += $item2['total_plata'];
+  $pdf->Cell(34,5,number_format($item1['total_plata']),1,1,'R');
+  $amount += $item1['total_plata'];
 }
 
 //total
