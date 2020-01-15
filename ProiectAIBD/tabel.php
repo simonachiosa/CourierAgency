@@ -75,7 +75,7 @@
 }
 
 .formInsert {
-   margin: 50px 300px 0px 0px; 
+   margin: 50px 300px 0px 0px;
 }
 
 .insertBtn {
@@ -89,11 +89,11 @@
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  font-size: 18px;    
+  font-size: 18px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  background: #5c5edc;   
+  background: #5c5edc;
 }
 
 #myInput2 {
@@ -202,9 +202,9 @@
   background-color: #5c5edc;
   color: white;
 }
-  
-  
-  
+
+
+
  #myInput5 {
   background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
@@ -394,7 +394,7 @@
     <div class="dummy-logo">
         <div class="dummy-icon foodicon foodicon--coconut"></div>
         <h2 class="dummy-heading">DPD Romania</h2>
-    </div> 
+    </div>
  </header>
  <nav id="ml-menu" class="menu">
  <div class="tab">
@@ -444,7 +444,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -461,8 +461,8 @@
                             echo "</form>";
                                 echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -482,7 +482,7 @@
         </div>
     </form>
 
-  
+
 
     <script>
     function myFunction1() {
@@ -501,7 +501,7 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
 
@@ -541,7 +541,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -559,8 +559,8 @@
                                 echo "</form>";
                                     echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -580,7 +580,7 @@
         </div>
     </form>
 
-  
+
 
     <script>
     function myFunction2() {
@@ -599,12 +599,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
   </div>
- 
+
   <div id="Hub" class="tabcontent">
   <table id="hub">
     <tr class="header">
@@ -635,7 +635,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -651,8 +651,8 @@
                             echo "</form>";
                                 echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -666,7 +666,7 @@
 
     </form>
 
-      
+
 
     <script>
     function myFunction3() {
@@ -685,12 +685,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
-    </script> 
+    </script>
   </div>
-  
+
   <div id="Colet" class="tabcontent">
   <table id="colet">
     <tr class="header">
@@ -723,7 +723,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -740,8 +740,8 @@
                             echo "</form>";
                                 echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -757,7 +757,7 @@
 
     </form>
 
-      
+
 
     <script>
     function myFunction4() {
@@ -776,14 +776,14 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
 
     </script>
-      
+
   </div>
-  
+
   <div id="Angajati" class="tabcontent">
     <table id="angajati">
     <tr class="header">
@@ -820,7 +820,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -839,8 +839,8 @@
                                     echo "</form>";
                                         echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -860,7 +860,7 @@
 
     </form>
 
-      
+
 
     <script>
     function myFunction5() {
@@ -879,12 +879,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
   </div>
-     
+
   <div id="Factura" class="tabcontent">
     <table id="factura">
     <tr class="header">
@@ -918,7 +918,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -937,12 +937,28 @@
                                     echo "</form>";
                                         echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
      <p></p>
+		 <?php
+		 $con = mysqli_connect('localhost', 'root', '');
+		 mysqli_select_db($con, 'curierat');
+		 ?>
+		 select invoice:
+     <form method = 'get' action = 'invoice-db.php'>
+       <select name = 'invoiceID'>
+         <?php
+           $query = mysqli_query($con, "select * from clienti");
+           while($invoice = mysqli_fetch_array($query)){
+             echo "<option value='".$invoice['cod_clienti']."'>".$invoice['cod_clienti'].", ".$invoice['nume'].", ".$invoice['prenume']."</option>";
+           }
+         ?>
+       </select>
+       <input type = 'submit' value = 'Generate'>
+     </form>
      <form action="insert_factura.php" method="post">
     <b>Total plata:</b>
     <input type="text" name="total_plata" value=""  size="20" required /><br><br>
@@ -954,6 +970,7 @@
     <input type="text" name="cod_clienti" value=""  size="20" required /><br><br>
         <input type="submit">
     </form>
+
 
     <script>
     function myFunction6() {
@@ -972,12 +989,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
   </div>
-      
+
   <div id="Masini" class="tabcontent">
     <table id="masini">
     <tr class="header">
@@ -1014,7 +1031,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -1034,8 +1051,8 @@
                                     echo "</form>";
                                         echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -1056,7 +1073,7 @@
 
     </form>
 
-      
+
 
     <script>
     function myFunction7() {
@@ -1075,12 +1092,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
   </div>
- 
+
   <div id="Ruta" class="tabcontent">
     <table id="ruta">
     <tr class="header">
@@ -1117,7 +1134,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -1137,8 +1154,8 @@
                                     echo "</form>";
                                         echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -1158,7 +1175,7 @@
         <input type="submit">
 
     </form>
-    
+
     <script>
     function myFunction8() {
       var input, filter, table, tr, td, i, txtValue, txtbx;
@@ -1176,13 +1193,13 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
   </div>
-      
-  
+
+
   <div id="Clienti" class="tabcontent">
     <table id="clienti">
     <tr class="header">
@@ -1219,7 +1236,7 @@
         }
     catch(PDOException $e)
         {
-        echo $sql."<br>".$e->getMessage(); 
+        echo $sql."<br>".$e->getMessage();
         $conn = null;
         }
         foreach($conn->query($sql) as $row){
@@ -1238,8 +1255,8 @@
                                 echo "</form>";
                                     echo "</tr>";
 
-              
-                                                    
+
+
     }
     ?>
     </table>
@@ -1277,12 +1294,12 @@
           } else {
             tr[i].style.display = "none";
           }
-        }       
+        }
       }
     }
     </script>
  </div>
- </div>   
+ </div>
      <script>
     function opentab(evt, cityName) {
       var i, tabcontent, tablinks;
