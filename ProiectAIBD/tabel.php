@@ -942,14 +942,16 @@
     }
     ?>
     </table>
+    <br><br>
      <p></p>
 		 <?php
 		 $con = mysqli_connect('localhost', 'root', '');
 		 mysqli_select_db($con, 'curierat');
 		 ?>
-		 select invoice:
+         <input class="input--style-3" type="text" placeholder="Select Invoice : ">
+    <br><br>
      <form method = 'get' action = 'invoice-db.php'>
-       <select name = 'invoiceID'>
+       <select name = 'invoiceID' class="input--style-3">
          <?php
            $query = mysqli_query($con, "select * from clienti");
            while($invoice = mysqli_fetch_array($query)){
@@ -957,18 +959,27 @@
            }
          ?>
        </select>
-       <input type = 'submit' value = 'Generate'>
+       <br><br>
+       <div class="p-t-10">
+            <button class="insertBtn" type="submit">Generate</button>
+        </div>
      </form>
-     <form action="insert_factura.php" method="post">
-    <b>Total plata:</b>
-    <input type="text" name="total_plata" value=""  size="20" required /><br><br>
-    <b>Data infiintarii:</b>
-    <input type="date" name="data_infiintarii" value=""  size="20" required /><br><br>
-    <b>Cod colet:</b>
-    <input type="text" name="cod_colet" value=""  size="20" required /><br><br>
-    <b>Cod client:</b>
-    <input type="text" name="cod_clienti" value=""  size="20" required /><br><br>
-        <input type="submit">
+     <form class="formInsert" action="insert_factura.php" method="post">
+     <div class="input-group">
+         <input class="input--style-3" type="text" placeholder="Total plata" name="total_plata">
+    </div>
+    <div class="input-group">
+        <input class="input--style-3" type="text" placeholder="Data infiintarii" name="data_infiintarii">
+    </div>
+    <div class="input-group">
+        <input class="input--style-3" type="text" placeholder="Cod colet" name="cod_colet">
+    </div>
+    <div class="input-group">
+        <input class="input--style-3" type="text" placeholder="Cod client" name="cod_clienti">
+    </div>
+    <div class="p-t-10">
+        <button class="insertBtn" type="submit">Insert</button>
+    </div>
     </form>
 
 
