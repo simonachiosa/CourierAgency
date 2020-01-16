@@ -2,7 +2,7 @@
     $servername = "127.0.0.1";
     $username = "root";
     $password = "";
-    $Username=filter_input(INPUT_POST, 'Username');
+    $Username=filter_input(INPUT_POST, 'User');
     $Parola=filter_input(INPUT_POST, 'Parola');
     $Rol=filter_input(INPUT_POST, 'Rol');
     try {
@@ -11,9 +11,12 @@
  
         $sql = "select Rol from conturi_angajati where Username='$Username' and Parola='$Parola'";
         
-        foreach($conn->query($sql) as $row){    
+        foreach($conn->query($sql) as $row){          
             if($row['Rol']=='client')
                 header('Location:plasare comanda.html');
+            
+            if($row['Rol']=='admin')
+                header('Location:tabel.php');
        }
     } catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();

@@ -469,13 +469,16 @@
      <p></p>
      <form class="formInsert" action="insert.php" method="POST">
         <div class="input-group">
-            <input class="input--style-3" type="text" placeholder="User" name="nume">
+            <input class="input--style-3" type="text" placeholder="Cod" name="cod_cont">
         </div>
         <div class="input-group">
-            <input class="input--style-3" type="text" placeholder="Parola" name="prenume">
+            <input class="input--style-3" type="text" placeholder="User" name="Username">
         </div>
         <div class="input-group">
-            <input class="input--style-3" type="text" placeholder="Rol" name="telefon">
+            <input class="input--style-3" type="text" placeholder="Parola" name="Parola">
+        </div>
+        <div class="input-group">
+            <input class="input--style-3" type="text" placeholder="Rol" name="Rol">
         </div>
         <div class="p-t-10">
             <button class="insertBtn" type="submit">Insert</button>
@@ -574,6 +577,10 @@
         </div>
         <div class="input-group">
             <input class="input--style-3" type="text" placeholder="Adresa destinatie" name="adresa_destinatie">
+        </div>
+        
+         <div class="input-group">
+            <input class="input--style-3" type="text" placeholder="Cod Hub" name="cod_hub">
         </div>
         <div class="p-t-10">
             <button class="insertBtn" type="submit">Insert</button>
